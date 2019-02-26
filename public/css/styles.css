@@ -1,0 +1,305 @@
+body{
+  background-color: rgb(22,22,22);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav{
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  opacity: 0.8;
+  justify-content: space-between;
+  overflow: hidden;  
+  color: white;
+  box-shadow: 2px 1px 2px gray;
+} 
+
+nav img{
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.nav-item:hover{
+  text-shadow: 1px 1px 2px white;
+}
+
+#logo{
+  width: 30px;
+  height: 30px;
+}
+
+.card-text{
+  text-align: center;
+}
+.card-deck {
+  margin:5px;
+}
+
+.text-muted {
+  font-size: 30px;
+  color: aqua;
+}
+.display-4{
+  text-align: center;
+  margin-bottom: 15px;
+  animation: fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;
+  border-bottom-left-radius: 15px;
+}
+
+@keyframes fade-in
+{
+  0%{
+    opacity:0
+  }
+  100%{
+    opacity:1
+  }
+}
+
+.card-title {
+  text-align: center;
+}
+
+#carouselExampleControls img{
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 1366px;
+  max-height: 650px;
+}
+
+#leMien{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border: 4px solid black;
+  padding: 4em;
+  padding-top: 2em;
+  padding-bottom: 1.5em;
+  justify-content: center; 
+  margin-top: 2em;
+  width: 60%;
+  margin-left: 16em;
+  margin-right: 12em; 
+  text-align: center;
+  margin-bottom: 2em;
+  background-color: #212529;
+  border-radius: 2px;
+}
+
+#leMien input{
+  margin-bottom: 2em;
+  margin-left: 13em;
+  width: 40%;
+}
+
+#leMien h2{
+  border: 2px solid gray;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  color: white;
+  transition-duration: 0.8s;
+  border-radius: 2px;
+}
+
+#leMien h2:hover{
+  background-color: rgb(240,240,240,0.9);
+  transition-duration: 0.8s;
+  color: black;
+}
+
+.connexion{
+  justify-content: end;
+}
+
+#recherche{
+  display: flex;
+  position: relative;
+  flex-direction: row-reverse;
+  left: 230px;
+}
+
+#recherche img:hover{
+  cursor: pointer;
+}
+
+@keyframes monAnim{
+  from{
+    left: 230px;
+  }
+  to{
+    left: 0px;
+  }
+}
+
+@keyframes monAnim2{
+  from{
+    left: 0px;
+  }
+  to{
+    left: 230px;
+  }
+}
+
+#recherche input{
+  margin-left: 1em;
+}
+
+/*footer{
+  margin-top: 2em;
+  margin-bottom: 0;
+  color: white;
+  padding: 3em;
+}
+
+footer p{
+  text-align: center;
+}
+
+footer img{
+  width: 10%;
+  margin-left: 34em;
+  filter: invert(100%);
+}*/
+footer {
+  margin: 0;
+  height: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+#footer-top {
+  height: auto;
+}
+
+#nav-footer {
+  height: auto;
+}
+
+/*Font styles*/
+
+footer h2 {
+  font-family: "DejaVu Sans Condensed";
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+footer li {
+  color: white;
+  text-align: center;
+  list-style-type: none;
+}
+
+footer li:hover {
+  color: dodgerblue;
+}
+
+/*Nav & logos & boutons*/
+
+.logo-social {
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+  text-align: center;
+}
+
+.logo-social:hover {
+  cursor: crosshair;
+  transform: scale(1.1);
+}
+
+.bouton-store {
+  width: 120px;
+  height: 45px;;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.flex-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.bouton-store:hover {
+  cursor: crosshair;
+  transform: scale(1.05);
+}
+
+
+.nav-borders {
+  /*border-left: 1px solid white;*/
+  
+}
+
+
+
+#fond{
+ background-image: url("http://lespaceurbain.com/wp-content/uploads/2017/11/hm1.jpg");
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px white;
+  background-position: center;
+}
+
+
+#fond:hover{
+  animation: zoom 2s forwards;
+}
+
+@keyframes zoom{
+  from{
+    background-size: 100%;
+  }
+  to{
+    background-size: 130%;
+  }
+}
+
+#fond .container{
+  background-color: rgb(250,250,250,0.8);
+}
+
+.card{
+  transition-duration: 0.8s;
+}
+
+.bouSlide{
+  position: relative;
+  left: 650px;
+}
+
+.buy{
+  padding: 1.5em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.card:hover{
+  box-shadow: 1px 1px 10px white;
+  transform: scale(1.2,1.2);
+  z-index: 1;
+  transition-duration: 0.8s;
+}
+
+.steep{
+background-image: url('../img/thumb-1920-931601.jpg');
+}
+input{
+  background-color: rgb(220,220,220);
+  border-radius: 6px;
+}
+
+input:focus{
+  background-color: rgb(255,255,255);
+}
+
+
+
+
