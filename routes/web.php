@@ -19,3 +19,18 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/panier', 'HomeController@panier')->name('panier');
+Route::get('/combis', 'FrontController@combis')->name('combis');
+Route::get('/veste', 'FrontController@veste')->name('veste');
+Route::get('/pulle', 'FrontController@pulle')->name('pulle');
+Route::get('/accessoires', 'FrontController@accessoires')->name('accessoires');
+Route::get('/pull1', 'FrontController@pull1')->name('pull1');
+Route::get('comptes', function() {
+    // Réservé aux utilisateurs authentifiés
+/*})->middleware('auth');
+Route::group(['prefix' => 'admin','middleware'=>'auth'], fnction (){
+    Route::get('/', function() {
+        return view('admin.index');
+    })=>admin.index
+*/
+
+});

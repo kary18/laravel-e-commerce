@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -34,7 +33,7 @@
                     <a class="nav-link text-white" href="dlc.php">Vetement<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item connexion">
-                    <a class="nav-link text-white" href="">Se connecter</a>
+                    <a class="nav-link text-white" href="connexion.php">Se connecter</a>
                 </li>
             </ul>
             <div id="recherche">
@@ -45,94 +44,7 @@
     </nav>
 </header>
 
-<body>
-
-<!--------------------------------- Bannière Vetement ---------------------------------------------->
-
-<image src="img/S52-VP-Desk.jpg" class="img-fluid" alt="Responsive image">
-    <h3 class="dede"></h3> </image> <!--------------------------------- Card Decks Bootstrap --------------------------------------->
-
-<div id='lesDLC' class="container">
-    <div class="card-deck">
-        <div class="card">
-            <img class="card-img-top" src="img/10020848C060_81_G.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h6 class="card-title">MANTEAUX & VESTE</h6>
-                <p class="card-text"></p>
-                <p class="card-text"><small class="text-muted"></small></p>
-                <a href="{{route('veste')}}" button type="button" class="btn btn-primary buy">Je shoppe</a>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="img/10022130C060_81_G.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h6 class="card-title">ROBES & COMBIS</h6>
-                <p class="card-text"></p>
-                <p class="card-text"><small class="text-muted"></small></p>
-                <a href="{{route('combis')}}" button type="button" class="btn btn-primary buy">Je shoppe</a>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="img/10021485C060_81_G.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h6 class="card-title">PULLS & GILET</h6>
-                <p class="card-text"></p>
-                <p class="card-text"><small class="text-muted"></small></p>
-                <a href="{{route('pulle')}}" button type="button" class="btn btn-primary buy">Je shoppe</a>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="img/10019964C060_81_G.jpg">
-            <div class="card-body">
-                <h6 class="card-title">ACCESSOIRE</h6>
-                <p class="card-text"></p>
-                <p class="card-text"></p>
-                <a href="{{route('accessoires')}}" button type="button" class="btn btn-primary buy">Je shoppe</a>
-            </div>
-        </div>
-    </div>
-    <br />
-    <!--  <div class="card-deck">
-<div class="card">
-<img class="card-img-top" src="img/dlc%20for%20honor%201.jpg">
-<div class="card-body">
-  <h6 class="card-title">FOR HONOR SEASON PASS YEAR 1</h6>
-  <p class="card-text"></p>
-  <p class="card-text"><small class="text-muted">19.99€</small></p>
-  <button type="button" class="btn btn-primary buy">Acheter</button>
-</div>
-</div>
-<div class="card">
-<img class="card-img-top" src="img/dlc%20ac%20origin.jpg" alt="Card image cap">
-<div class="card-body">
-  <h6 class="card-title">ASSASSIN'S CREED : ORIGIN'S SEASON PASS</h6>
-  <p class="card-text"></p>
-  <p class="card-text"><small class="text-muted">99.99€</small></p>
-  <button type="button" class="btn btn-primary buy">Acheter</button>
-</div>
-</div>
-<div class="card">
-<img class="card-img-top" src="img/dlc%20ac%20syndicate.jpg" alt="Card image cap">
-<div class="card-body">
-  <h6 class="card-title">ASSINSSIN'S CREED SYNDICATE SEASON PASS</h6>
-  <p class="card-text"></p>
-  <p class="card-text"><small class="text-muted">24.99€</small></p>
-  <button type="button" class="btn btn-primary buy">Acheter</button>
-</div>
-</div>
-<div class="card">
-<img class="card-img-top" src="img/dlc%20farcry.jpg" alt="Card image cap">
-<div class="card-body">
-  <h6 class="card-title">FARCRY 5 SEASON PASS </h6>
-  <p class="card-text"></p>
-  <p class="card-text"><small class="text-muted">24.99€</small></p>
-  <button type="button" class="btn btn-primary buy">Acheter</button>
-</div> -->
-</div>
-</div>
-</div>
-</body>
-
+@yield('content')
 <!---------------------------------------- Footer ----------------------------------------------->
 
 <footer  class="container-fluid">
