@@ -54,15 +54,23 @@
 
 <div id='lesDLC' class="container">
     <div class="card-deck">
+
+        @foreach($categories as $categorie)
+
         <div class="card">
             <img class="card-img-top" src="img/10020848C060_81_G.jpg" alt="Card image cap">
             <div class="card-body">
-                <h6 class="card-title">MANTEAUX & VESTE</h6>
+                <h6 class="card-title">{{ $categorie->label  }}</h6>
                 <p class="card-text"></p>
                 <p class="card-text"><small class="text-muted"></small></p>
-                <a href="{{route('veste')}}" button type="button" class="btn btn-primary buy">Je shoppe</a>
+                <a href="categorie/{{ $categorie->id }}" button type="button" class="btn btn-primary buy">Je shoppe</a>
             </div>
         </div>
+
+        @endforeach
+
+        <!--
+
         <div class="card">
             <img class="card-img-top" src="img/10022130C060_81_G.jpg" alt="Card image cap">
             <div class="card-body">
@@ -90,6 +98,9 @@
                 <a href="{{route('accessoires')}}" button type="button" class="btn btn-primary buy">Je shoppe</a>
             </div>
         </div>
+
+        ->
+
     </div>
     <br />
     <!--  <div class="card-deck">

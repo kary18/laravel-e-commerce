@@ -10,35 +10,21 @@
     <script type="text/javascript" src="jquery.js"></script>
 
     <div class="card-deck">
+
+        @foreach($vestes as $veste)
+
         <div class="card">
             <img src="img/10020848C060_81_G.jpg" class="card-img-top" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">veste</h5>
-                <p class="card-text">déscription</p>
+                <p class="card-text">{{ $veste->description }}</p>
             </div>
             <div class="card-footer">
                 <small class="text-muted">ajouter au panier</small>
             </div>
         </div>
-        <div class="card">
-            <img src="img/10020848C060_81_G.jpg" class="card-img-top" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">veste</h5>
-                <p class="card-text">déscription</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">ajouter au panier</small>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/10020848C060_81_G.jpg" class="card-img-top" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">veste</h5>
-                <p class="card-text">déscription</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">ajouter au panier</small>
-            </div>
-        </div>
+
+        @endforeach
+
     </div>
 @endsection

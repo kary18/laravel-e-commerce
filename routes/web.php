@@ -11,18 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WelcomeController@welcome');
 
 Auth::routes();
 
+Route::get('comptes', function() {
+    // Réservé aux utilisateurs authentifiés
+})->middleware('auth');
+
+
+
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/panier', 'HomeController@panier')->name('panier');
+
+Route::get('/categorie/{id}', 'FrontController@categorie');
 Route::get('/combis', 'FrontController@combis')->name('combis');
 Route::get('/veste', 'FrontController@veste')->name('veste');
 Route::get('/pulle', 'FrontController@pulle')->name('pulle');
 Route::get('/accessoires', 'FrontController@accessoires')->name('accessoires');
+
 Route::get('/pull1', 'FrontController@pull1')->name('pull1');
 Route::get('comptes', function() {
     // Réservé aux utilisateurs authentifiés
@@ -32,5 +40,9 @@ Route::group(['prefix' => 'admin','middleware'=>'auth'], fnction (){
         return view('admin.index');
     })=>admin.index
 */
+    Route::resource('/cart', 'CartController');
+    Route::get('/cart/add-item/{id}', 'CartController@addItem')->name('cart.addItem');
+
+
 
 });
