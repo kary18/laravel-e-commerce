@@ -12,5 +12,7 @@ class WelcomeController extends Controller
         $categories = Categorie::all();
 
         return view('welcome')->with('categories', $categories);
+
     }
+
 }

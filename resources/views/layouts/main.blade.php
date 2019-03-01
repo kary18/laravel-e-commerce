@@ -19,27 +19,19 @@
     <!--------------------------------- Barre de Navigation --------------------------------------->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand" href="index.php"><img src="img/log.png" height="100" width="100"></a>
+        <a class="navbar-brand" href=""><img src="/e-commerce2/public/img/log.png" height="100" width="100"></a>
         <!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
          </button> -->
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link text-white" href="dlc.php">Nouveaute<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="dlc.php">Vetement<span class="sr-only">(current)</span></a>
-                </li>
+
                 <li class="nav-item connexion">
-                    <a class="nav-link text-white" href="connexion.php">Se connecter</a>
+                    <a class="nav-link text-white" href="{{route('home')}}">Se connecter</a>
                 </li>
             </ul>
-            <div id="recherche">
-                <input id="inputR" type="text" name="recherche" placeholder="recherche...">
-                <img id="logo" src="img/search.png">
-            </div>
+
         </div>
     </nav>
 </header>
@@ -54,7 +46,7 @@
         <!--Liens vers autres sites-->
 
         <ul class="col-xl-4 col-md-4 col-sm-6 col-12 pb-4">
-            <h2>Nos gategories</h2>
+            <h2>Nos Categories</h2>
             <li><a>MANTEAUX & VESTE</a></li>
             <li><a>ROBES & COMBIS</a></li>
             <li><a>PULLS & GILET</a></li>
@@ -71,10 +63,10 @@
 
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
-                    <img class="bouton-store" src="img/bouton_googleplay.jpg" alt="googleplay">
+                    <img class="bouton-store" src="/e-commerce2/public/img/bouton_googleplay.jpg" alt="googleplay">
                 </div>
                 <div class="col-12 text-center">
-                    <img class="bouton-store" src="img/bouton_appstore.png" alt="appstore">
+                    <img class="bouton-store" src="/e-commerce2/public/img/bouton_appstore.png" alt="appstore">
                 </div>
             </div>
 
@@ -86,9 +78,9 @@
             <h2>Suivez-nous</h2>
 
             <div class="flex-logo">
-                <a><img src="./img/logo_fb.png" alt="Facebook" class="rounded logo-social"></a>
-                <a><img src="./img/logo_tweeter.png" alt="Facebook" class="rounded logo-social"></a>
-                <a><img src="./img/logo_instagram.png" alt="Facebook" class="rounded logo-social"></a>
+                <a><img src="/e-commerce2/public/img/logo_fb.png" alt="Facebook" class="rounded logo-social"></a>
+                <a><img src="/e-commerce2/public/img/logo_tweeter.png" alt="Facebook" class="rounded logo-social"></a>
+                <a><img src="/e-commerce2/public/img/logo_instagram.png" alt="Facebook" class="rounded logo-social"></a>
             </div>
         </div>
 

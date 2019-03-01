@@ -14,14 +14,13 @@
         @foreach($products as $product)
 
         <div class="card">
-            <img src="../img/10022130C060_81_G.jpg" class="card-img-top" alt="Card image cap">
+           <img src="/e-commerce2/public/img/{{ $categorie->image  }}" class="card-img-top" alt="Card image cap">
+
             <div class="card-body">
                 <h5 class="card-title">{{ $categorie->label  }}</h5>
                 <p class="card-text">{{ $product->description }}</p>
             </div>
-            <div class="card-footer">
-                <small class="text-muted">ajouter au panier</small>
-            </div>
+
         </div>
 
         @endforeach

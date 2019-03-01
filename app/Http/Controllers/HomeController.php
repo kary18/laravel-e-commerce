@@ -17,8 +17,6 @@ class HomeController extends Controller
     }
 
 
-
-
     /**
      * Show the application dashboard.
      *
@@ -27,10 +25,6 @@ class HomeController extends Controller
     public function index()
     {
         return view('front.home');
-    }
-    public function pull1()
-    {
-        return view('front.pull1');
     }
 
 
